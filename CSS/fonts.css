@@ -1,0 +1,97 @@
+/* Geometria - 400 */
+@font-face {
+    font-family: 'Geometria';
+    src: url("../Fonts/Geometria/Geometria.eot"); /* IE9 Compat Modes */
+    src: local(""),
+        url("../Fonts/Geometria/Geometria.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+        url("../Fonts/Geometria/Geometria.woff2") format("woff2"), /* Super Modern Browsers */
+        url("../Fonts/Geometria/Geometria.woff") format("woff"), /* Modern Browsers */
+        url("../Fonts/Geometria/Geometria.ttf") format("truetype"), /* Safari, Android, iOS */ 
+        url("../Fonts/Geometria/Geometria.svg#Geometria") format("svg"); /* Legacy iOS */
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* Montserrat - 400 */
+@font-face {
+    font-family: 'Montserrat';
+    src: url("../Fonts/Montserrat/Montserrat-Regular.eot"); /* IE9 Compat Modes */
+    src: local(""),
+        url("../Fonts/Montserrat/Montserrat-Regular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+        url("../Fonts/Montserrat/Montserrat-Regular.woff2") format("woff2"), /* Super Modern Browsers */
+        url("../Fonts/Montserrat/Montserrat-Regular.woff") format("woff"), /* Modern Browsers */
+        url("../Fonts/Montserrat/Montserrat-Regular.ttf") format("truetype"), /* Safari, Android, iOS */ 
+        url("../Fonts/Montserrat/Montserrat-Regular.svg#Montserrat") format("svg"); /* Legacy iOS */
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* Montserrat - 700 */
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../Fonts/Montserrat/Montserrat-Bold.eot"); /* IE9 Compat Modes */
+  src: local(""),
+      url("../Fonts/Montserrat/Montserrat-Bold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+      url("../Fonts/Montserrat/Montserrat-Bold.woff2") format("woff2"), /* Super Modern Browsers */
+      url("../Fonts/Montserrat/Montserrat-Bold.woff") format("woff"), /* Modern Browsers */
+      url("../Fonts/Montserrat/Montserrat-Bold.ttf") format("truetype"), /* Safari, Android, iOS */ 
+      url("../Fonts/Montserrat/Montserrat-Bold.svg#Montserrat") format("svg"); /* Legacy iOS */
+  font-style: normal;
+  font-weight: 700;
+}
+
+/* Montserrat - 800 */
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../Fonts/Montserrat/Montserrat-ExtraBold.eot"); /* IE9 Compat Modes */
+  src: local(""),
+      url("../Fonts/Montserrat/Montserrat-ExtraBold.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+      url("../Fonts/Montserrat/Montserrat-ExtraBold.woff2") format("woff2"), /* Super Modern Browsers */
+      url("../Fonts/Montserrat/Montserrat-ExtraBold.woff") format("woff"), /* Modern Browsers */
+      url("../Fonts/Montserrat/Montserrat-ExtraBold.ttf") format("truetype"), /* Safari, Android, iOS */ 
+      url("../Fonts/Montserrat/Montserrat-ExtraBold.svg#Montserrat") format("svg"); /* Legacy iOS */
+  font-style: normal;
+  font-weight: 700;
+}
+
+/* Ico - Fonts */
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../Fonts/Ico/icomoon.eot?wfcadb'); /* IE9 Compat Modes */
+    src: local(""),
+        url('../Fonts/Ico/icomoon.eot?wfcadb#iefix') format('embedded-opentype'),  /* IE6-IE8 */
+        url("../Fonts/Ico/icomoon.woff2?wfcadb") format("woff2"), /* Super Modern Browsers */
+        url('../Fonts/Ico/icomoon.woff?wfcadb') format('woff'),
+         url('../Fonts/Ico/icomoon.ttf?wfcadb') format('truetype'),
+        url('../Fonts/Ico/icomoon.svg?wfcadb#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"]::before,
+  [class*=" icon-"]::before
+   {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    /* speak: never; */
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-phone:before {
+    content: "\e900";
+  }
+  .icon-telegram:before {
+    content: "\e901";
+  }
+  .icon-viber:before {
+    content: "\e902";
+  }

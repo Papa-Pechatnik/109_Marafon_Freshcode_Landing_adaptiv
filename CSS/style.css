@@ -1,0 +1,614 @@
+/*
+1.VARIABLES
+2.BASIC tags
+3.BASIC class
+4.Button & btn link
+5.BASIC Font sizes and Content size
+6.HEADER
+    6.1.HEADER burger
+7.MAIN
+    7.1.MAIN header
+    7.2.MAIN stage
+8.Money calculator
+9.FOOTER
+    9.1.FOOTER Form
+20.MEDIA
+*/
+
+/*----------- 1.VARIABLES ----*/
+:root {
+  --color-white: white;
+  --color-black: black;
+  --color-medium-blue: #73a6b1;
+  --color-light-blue: #f1fdff;
+  --color-light2-blue: #f2feff;
+  --color-light3-blue: #9ad2de;
+  --color-time: #3d8c9d;
+  --color-button: #7ae5fd;
+  --color-button-hover: #9ad2de;
+  --color-footer: #f9fadf;
+  --color-footer1: #f2f5cf;
+  --max-width: 80.9988rem;
+}
+
+/*----------- 2.BASIC tags ----*/
+body {
+  background: var(--color-white);
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  color: var(--color-black);
+}
+
+a {
+  text-decoration: none;
+}
+
+time {
+  display: inline-block;
+  font-size: 1rem;
+  line-height: 96.9%;
+  color: var(--color-time);
+
+  padding-top: 0.625rem;
+}
+
+time:hover {
+  color: var(--color-button-hover);
+}
+
+[data-tooltip]::after {
+  content: attr(data-tooltip);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+[data-tooltip]:hover::after {
+  opacity: 1;
+  color: var(--color-time);
+}
+
+/*----------- 3.BASIC class ----*/
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.container-padding {
+  padding-left: clamp(1.25rem, 1.04266rem + 0.873vw, 1.75rem);
+  padding-right: clamp(1.25rem, 1.04266rem + 0.873vw, 1.75rem);
+  box-sizing: border-box;
+}
+
+.logo {
+  height: 4.0625rem;
+  width: 4.0625rem;
+}
+
+/*----------- 4.Button & btn link ----*/
+
+.btn {
+  font-weight: 400;
+  white-space: nowrap;
+  font-size: 1.125rem;
+  line-height: 96.9%;
+  color: var(--color-black);
+  text-transform: uppercase;
+
+  border: none;
+  border-radius: 5.4375rem;
+
+  background-color: var(--color-button);
+
+  display: inline-block;
+  /*margin: auto;*/
+}
+
+.btn:hover {
+  background-color: var(--color-button-hover);
+}
+
+.btn-big {
+  padding: 1.3125rem 1.75rem;
+}
+
+.btn-small {
+  padding: 1.3125rem 2.1875rem;
+}
+
+/*----------- 5.BASIC Font sizes and Content size ----*/
+h1,
+h2,
+h3 {
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-weight: 800;
+  font-size: clamp(3.125rem, 2.01018rem + 4.694vw, 5.8125rem);
+  line-height: 94.9%;
+  color: var(--color-light3-blue);
+  max-width: min-content;
+}
+
+h2 {
+  font-size: clamp(3.125rem, 2.86565rem + 1.092vw, 3.75rem);
+  line-height: 120%;
+}
+
+h3 {
+  font-size: clamp(1.875rem, 1.46009rem + 1.747vw, 2.875rem);
+  line-height: 120%;
+}
+
+h4 {
+  font-size: 1.25rem;
+  line-height: 120%;
+}
+
+h5 {
+  font-size: 1rem;
+  line-height: 120%;
+}
+
+.font-size-h20 {
+  font-size: clamp(1rem, 0.89621rem + 0.437vw, 1.25rem);
+  line-height: 120%;
+}
+
+.font-size-h27 {
+  font-size: clamp(1.25rem, 1.14194rem + 0.455vw, 1.6875rem);
+  line-height: 120%;
+}
+
+/*----------- 6.HEADER ----*/
+.header-background {
+  background-color: var(--color-light-blue);
+  width: 100%;
+  overflow: hidden;
+}
+
+.header-nav {
+  display: flex;
+  margin-top: clamp(1.25rem, 0.13518rem + 4.694vw, 3.9375rem);
+  margin-bottom: clamp(1.5625rem, 0.318rem + 5.24vw, 4.5625rem);
+  position: relative;
+  z-index: 2;
+}
+
+.header-menu {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.header-menu-nav {
+  display: flex;
+  column-gap: 3.5625rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.menu-nav-item {
+  font-size: 1.125rem;
+  line-height: 0.97;
+  text-transform: capitalize;
+  color: var(--color-black);
+}
+
+.header-title {
+  width: min-content;
+  height: 33.0625rem;
+}
+
+.header-title p {
+  width: 70%;
+}
+
+.header-font-size-h20margin {
+  padding-top: clamp(2.25rem, 1.52396rem + 3.057vw, 4rem);
+}
+
+.header-article {
+  position: relative;
+}
+
+.header-img {
+  position: absolute;
+  left: clamp(3.375rem, -10.23708rem + 57.314vw, 36.1875rem);
+  bottom: 0;
+}
+
+.header-img-flag {
+  height: clamp(26.8125rem, 15.3004rem + 48.472vw, 54.5625rem);
+}
+
+/*----------- 6.1.HEADER burger----*/
+.header-nav-burger {
+  display: none;
+}
+
+/*----------- 7.MAIN ----*/
+.main-margin {
+  margin-top: clamp(6.375rem, 5.31195rem + 4.476vw, 8.9375rem);
+}
+
+.btn-more {
+  display: flex;
+  justify-content: center;
+  margin-top: clamp(3.75rem, 3.46476rem + 1.201vw, 4.4375rem);
+  margin-bottom: 40px;
+}
+
+/*----------- 7.1.MAIN header ----*/
+.main-header-title {
+  max-width: 49.5rem;
+  margin: auto;
+  text-align: center;
+}
+
+.main-header-title .font-size-h27 {
+  max-width: 46.25rem;
+  margin: auto;
+  padding-top: calc(0.875rem - 14 * ((100vw - 24.375rem) / 1530)); /*- ??? -*/
+  padding-bottom: clamp(0.625rem, 0.47086rem + 0.649vw, 1.25rem);
+}
+
+.main-header-title .font-size-h20 {
+  max-width: 36.75rem;
+  margin: auto;
+  color: var(--color-medium-blue);
+}
+
+/*----------- 7.2.MAIN stage ----*/
+.inner {
+  display: flex;
+  justify-content: space-between;
+  background: var(--color-light-blue);
+  border-radius: 0.625rem;
+}
+
+.stage {
+  flex: 1;
+  padding-top: clamp(2.5rem, 2.94218rem - 0.546vw, 2.8125rem);
+  padding-bottom: clamp(2.8125rem, 3.25468rem - 0.546vw, 3.125rem);
+}
+
+.stage-img {
+  flex: 1 1 auto;
+  padding: calc(40 * ((100vw - 390px) / 1530));
+  max-width: clamp(21.875rem, 15.78194rem + 25.655vw, 36.5625rem);
+}
+
+.stage-img img {
+  width: 100%;
+  border-radius: 0.625rem;
+}
+
+.stage h4 {
+  padding-top: 0.625rem;
+}
+
+.stage-padd {
+  padding-left: clamp(0.875rem, 0.20098rem + 2.838vw, 2.5rem);
+  padding-right: clamp(0.875rem, 0.20098rem + 2.838vw, 2.5rem);
+}
+
+.stage-performance {
+  margin-top: 2.8125rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: clamp(2.1875rem, 3.51403rem - 1.638vw, 3.125rem);
+}
+
+.stage-victory {
+  margin-top: clamp(3.5625rem, 3.25138rem + 1.31vw, 4.3125rem);
+}
+
+.stage-music {
+  margin-top: clamp(3.125rem, 2.89368rem + 0.974vw, 4.0625rem);
+}
+
+.stage-music-padd {
+  padding-left: clamp(1.8125rem, 1.64293rem + 0.714vw, 2.5rem);
+  padding-right: clamp(1.8125rem, 1.64293rem + 0.714vw, 2.5rem);
+}
+
+/*--MAIN stage Подарунок -------*/
+
+.present {
+  background: url("../IMG/fon_line_blue.png");
+  background-position: bottom;
+  background-size: cover;
+  height: clamp(36.25rem, 32.15336rem + 17.249vw, 46.125rem);
+}
+
+.stage-present {
+  position: relative;
+}
+
+.stage-present-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: clamp(16.875rem, 23.94933rem + -8.734vw, 21.875rem);
+  background-color: var(--color-light2-blue);
+  border-radius: 0.625rem;
+  top: 16.875rem;
+}
+
+.stage-present-box p {
+  max-width: 24.4375rem;
+  padding-left: clamp(1.0625rem, 0.46614rem + 2.511vw, 2.5rem);
+  padding-right: clamp(1.0625rem, 0.46614rem + 2.511vw, 2.5rem);
+}
+
+.stage-present-box img {
+  width: clamp(21.0625rem, 18.65116rem + 10.153vw, 26.875rem);
+}
+
+/*----------- 8.Money calculator ----*/
+
+.to-get {
+  padding-top: clamp(6.25rem, 7.07959rem - 3.493vw, 4.25rem);
+  text-align: center;
+}
+
+.to-get .font-size-h20 {
+  max-width: 36.75rem;
+  margin: 0 auto;
+  color: var(--color-medium-blue);
+  padding-top: clamp(0.3125rem, 1.37363rem - 1.31vw, 1.0625rem);
+  padding-bottom: clamp(4.8125rem, 5.25468rem - 0.546vw, 5.125rem);
+}
+
+.calculation {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  flex-direction: row;
+  max-width: 21.4375rem;
+  font-size: 3.75rem;
+  line-height: 94.9%;
+
+  text-align: center;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+
+  color: var(--color-black);
+  padding-top: 1.625rem;
+  padding-bottom: clamp(4.0625rem, 2.09196rem + 8.297vw, 8.8125rem);
+}
+
+.calculation li:nth-child(2) {
+  border-left: 1px solid var(--color-light3-blue);
+  border-right: 1px solid var(--color-light3-blue);
+  padding-left: 0.8125rem;
+  padding-right: 0.8125rem;
+}
+
+/*----------- 9.FOOTER ----*/
+.footer {
+  background-color: var(--color-footer);
+  margin-top: clamp(4.0625rem, 2.09196rem + 8.297vw, 8.8125rem);
+  padding-bottom: clamp(0rem, -3.0077rem + 12.664vw, 7.25rem);
+}
+
+.contacts {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 59.375rem;
+  padding-top: clamp(3.5625rem, 4.71201rem - 1.419vw, 4.375rem);
+  padding-bottom: clamp(5.9375rem, 5.78194rem + 0.655vw, 6.3125rem);
+}
+
+.contacts h2 {
+  padding-bottom: 2.75rem;
+}
+
+.social-networks {
+  display: flex;
+  flex-direction: column;
+  width: 27.5rem;
+  gap: clamp(2.5625rem, 2.14759rem + 1.747vw, 3.5625rem);
+}
+
+.social-networks-bot {
+  display: flex;
+  flex-direction: row;
+  column-gap: 1rem;
+}
+
+.social-networks :last-child p {
+  padding-top: 0.375rem;
+}
+
+.social-networks-item_info {
+  padding-top: 0.5625rem;
+}
+
+.phone-text {
+  font-weight: 700;
+  color: var(--color-black);
+}
+
+.icon-phone,
+.icon-telegram,
+.icon-viber {
+  font-size: 2rem;
+  color: var(--color-black);
+}
+
+.phone-text:hover,
+.icon-phone:hover,
+.icon-telegram:hover,
+.icon-viber:hover {
+  color: var(--color-button-hover);
+  cursor: pointer;
+}
+
+/*----------- 9.1.FOOTER Form ----*/
+.form-box {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: var(--color-white);
+  align-items: center;
+}
+
+.form,
+.form-img {
+  flex: 50%;
+  min-width: 20.625rem;
+  box-sizing: border-box;
+}
+
+.form-img {
+  position: relative;
+}
+
+.form-img img {
+  width: 90%;
+  padding-left: clamp(0rem, -1.01128rem + 4.258vw, 2.4375rem);
+  padding-right: clamp(0rem, -1.01128rem + 4.258vw, 2.4375rem);
+}
+
+.form-img-circle {
+  position: absolute;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 1.5rem;
+  background-color: var(--color-light-blue);
+  box-shadow: 6px 6px 0px var(--color-black);
+  left: 62%;
+  top: 52%;
+  color: var(--color-black);
+}
+
+.form {
+  padding-top: clamp(3.375rem, 6.46999rem - 3.821vw, 5.5625rem);
+  padding-bottom: clamp(3.375rem, 4.96669rem - 1.965vw, 4.5rem);
+  padding-left: clamp(1rem, 1.35379rem + -0.437vw, 1.25rem);
+  padding-right: clamp(1.25rem, -0.66876rem + 8.079vw, 5.875rem);
+}
+
+.form-input {
+  display: flex;
+  flex-direction: column;
+  gap: 1.9375rem;
+  color: var(--color-black);
+  margin-top: clamp(2.4375rem, 4.55975rem - 2.62vw, 3.9375rem);
+}
+
+.form-input-item {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+
+  width: 100%;
+  height: 4.125rem;
+  border-radius: 3.8125rem;
+  border: none;
+  padding-left: 2.6875rem;
+}
+
+.form-input-item[name="name"],
+.form-input-item[name="email"] {
+  box-sizing: border-box;
+  background: var(--color-footer);
+}
+
+.form-input-item[name="name"]:focus,
+.form-input-item[name="email"]:focus {
+  outline: 2px groove var(--color-button);
+}
+
+.form-input-item[name="name"]:focus-visible,
+.form-input-item[name="email"]:focus-visible {
+  background-color: var(--color-footer1);
+}
+
+.form-input-item[type="button"] {
+  font-size: 1.125rem;
+  line-height: 120%;
+  text-transform: uppercase;
+  padding-left: 0;
+  background: var(--color-button);
+}
+
+.form-input-item[type="button"]:hover {
+  background-color: var(--color-button-hover);
+  border: none;
+}
+
+.form-input-item::placeholder {
+  color: var(--color-black);
+}
+
+.form-input-item:focus::placeholder {
+  opacity: 0;
+}
+
+/*----------- 20.MEDIA ----*/
+@media screen and (max-width: 1023.96px) {
+  .inner {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .stage-img {
+    align-self: center;
+    max-width: max-content;
+  }
+}
+
+@media screen and (max-width: 767.96px) {
+  .header-menu-nav,
+  .btn-none {
+    display: none;
+  }
+
+  .header-nav-burger {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 575.96px) {
+  h3 {
+    line-height: 94.9%;
+  }
+
+  .present {
+    background: var(--color-white);
+  }
+
+  .stage-present-box {
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 0;
+  }
+
+  .stage-present-box p {
+    padding-bottom: 2.5rem;
+    padding-top: 4.375rem;
+  }
+
+  .main-header-title,
+  .to-get h2,
+  .to-get .font-size-h20 {
+    text-align: left;
+  }
+
+  .to-get .font-size-h27,
+  .to-get .btn {
+    text-align: center;
+  }
+}
